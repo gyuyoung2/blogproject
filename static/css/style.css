@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'twaysky';
+}
+
+h2{
+    font-family: 'twayair';
+}
+
+body{
+    background-image: url('http://www.matcl.com/files/attach/images/2791205/010/801/002/61d156f2fbc9de51d589197de301e131.jpg');
+}
+
+a{
+    font-family: 'CookieRun-Regular';
+}
+
+
+
+
+

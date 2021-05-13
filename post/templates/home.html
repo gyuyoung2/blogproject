@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>주린이의 매매 일지</title>
+</head>
+<body>
+    <center>
+        <h1>주린이의 매매 일지 :(</h1>
+    </center>
+<center>
+    {% for page in pages.all %}
+    <a href="{% url 'detail' page.id %}">{{page.title}}</a>
+    <a href="{% url 'update' page.id %}"><span>수정</span></a>
+    <a href="{% url 'delete' page.id %}"><span>삭제</span></a>
+    <br><br>    
+    {% endfor %}
+    <a href="{% url 'create' %}">추가하기</a>
+</center>
+    
+</body>
+</html>

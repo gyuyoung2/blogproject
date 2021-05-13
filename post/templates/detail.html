@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>일지 내용</title>
+</head>
+<body>
+    <center>
+        <h1>{{page_detail.title}}</h1><br>
+        <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2021/02/03/105264206.2.jpg" alt="">
+        <h2>{{page_detail.body}}</h2>
+        <h4>{{page_detail.pub_date}}</h4>
+        <a href="{% url 'home' %}">집으로</a>
+    </center>
+       
+</body>
+</html>
